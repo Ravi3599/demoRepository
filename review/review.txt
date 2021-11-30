@@ -1,0 +1,90 @@
+1) If we give demo to class name and Helloworld what happens
+Ans: Actually we have given Helloworld to java file and class as demo. As we have used public to class so class name and file name should be same.It gives compile time error.If we remove public is gets compiled and but not gets executed.
+
+2)java program of Helloworld
+Ans:	public class Helloworld
+		{
+		public static void main (String args[])
+			{
+			while(true)
+				{
+   				System.out.println("Hello world");
+				}	
+				try
+					{
+					Thread.sleep(6000);
+					}              
+				catch(Exception ex)
+				{
+				System.out.println(ex);
+				}
+			}
+	}
+}
+
+3)Why we use static in main method
+Ans: If we dont use static keyword, for calling main method we have to create object. If we use static keyword ,main method can be called directly.
+
+4)Average of basic pay of All CAPTAIN from data.csv
+Ans: cat data.csv | grep CAPTAIN | awk '{sum+=4}END{print $sum/NR}'
+
+5)Coin Flip
+Ans:    #!/bin/bash -x
+
+	a=$((RANDOM%2))
+	if [ $a -eq 1 ]
+	then
+   		echo "Head"
+	else
+   		echo "Tails"
+	fi
+
+6)Power Of Two
+Ans: 	#!/bin/bash -x
+
+	read -p "Enter a limit:" n
+	result=1
+	while [ $n -gt 0 ]
+	do
+	result=$((result * 2))
+	echo $result
+	((n--))
+	done
+
+7)Harmonic Number
+Ans:    #!/bin/bash -x
+
+	read -p "Enter limit:" n
+	echo "Harmonic Number of $n is:"
+	echo -n "Hn="
+	for ((i=1; i<=n-1; i++ ))
+	do
+   		echo -n "1/"$i "+ "
+	done
+	echo -n "1/"$i
+
+8) Sequence : selection tells which statement is to be executed.It takes input many times without using loops.
+   Selection: A statement that provides slection between alternative like if, if_elif and case
+   Repeatation: Repeatation causes statements to be executed until certain condition met like for and while loop
+
+9) Difference between for loop and while loop
+Ans: for loop executes till predefined number of times as we know termination condition.But in while loop it iterates till an unspecified number of times.
+
+10)Why we use function?
+Ans: Functions allows the same piece of code to run multiple times. function code block can be reused.It save extra time for writing code.By calling multiple times we can run that particular code block.
+
+11)What is array?
+Ans: Array stores same data types in sequencial memory location.So by using index we can do retrieval and manipulation faster.
+
+12)What is dictionary?
+Ans: Dictionary is called as associative array or hash map . It has key and value pair.It is better suited for relationship between pair of objects.
+
+13)Difference between array and dictionary.
+Ans: Array stores elements sequencially in memory location.But in dictionary elements are stored in non-sequence order.So in array retrival of elements is faster as compared to dictionary.
+Dictionary is unordered and key based.Array is index based and ordered by index-method.
+
+
+
+
+
+
